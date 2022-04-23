@@ -1,0 +1,5 @@
+User(email=a@b.com, password=$2a$10$an9tCHZ6K3g1XpAVU7MRNOdu6L9WOePV7zUr16/sQUKdKokN1akNW, name=test)
+Checkout(id=35, pending=false)
+LineItem(id=67, item=Item(id=19, book=Book(id=7, title=The Inevitable, author=Kevin Kelly, description=Forecasts the twelve technological forces that will shape the next thirty years., isbn=9780525428084, imageUrl=https://picsum.photos/seed/7/200/300, category=Technology), itemCondition=New), checkout=Checkout(id=35, pending=false), due=2022-05-23, returned=null)
+LineItem(id=68, item=Item(id=32, book=Book(id=10, title=The Martian, author=Andy Weir, description=The story follows an American astronaut, Mark Watney, as he becomes stranded alone on Mars in 2035 and must improvise in order to survive., isbn=9780804139021, imageUrl=https://picsum.photos/seed/10/200/300, category=Science Fiction), itemCondition=New), checkout=Checkout(id=35, pending=false), due=2022-05-23, returned=null)
+end of file

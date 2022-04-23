@@ -1,0 +1,3 @@
+User(email=p_schmitz@email.com, password=$2a$12$gA7DNVYnOeo4Zj.VaoNhe.8IlgRj87/i0aE3ZeDJph.myMLI4Rvjq, name=Paul Schmitz)
+Checkout(id=29, pending=false)
+end of file

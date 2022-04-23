@@ -1,0 +1,4 @@
+User(email=test@test.com, password=$2a$10$jN6Zqo.xDjLkQI.8rzjfHeTNbNfH3CGwTcwcnusyRpXUWpqT1Ve5m, name=Test)
+Checkout(id=1, pending=false)
+LineItem(id=1, item=Item(id=4, book=Book(id=2, title=Data Structures & Other Objects Using Java, author=Michael Main, description=Fourth edition., isbn=9780132576246, imageUrl=https://picsum.photos/seed/2/200/300, category=Math & Science), itemCondition=Fine), checkout=Checkout(id=1, pending=false), due=2022-05-23, returned=null)
+end of file

@@ -1,0 +1,5 @@
+User(email=p_schmitz@email.com, password=$2a$12$gA7DNVYnOeo4Zj.VaoNhe.8IlgRj87/i0aE3ZeDJph.myMLI4Rvjq, name=Paul Schmitz)
+Checkout(id=30, pending=false)
+LineItem(id=60, item=Item(id=17, book=Book(id=5, title=Black Hawk Down, author=Mark Bowden, description=Documents efforts by the Unified Task Force to capture Somali faction leader Mohamed Farrah Aidid in 1993, and the resulting battle in Mogadishu between United States forces and Aidid's militia., isbn=9780871137388, imageUrl=https://picsum.photos/seed/5/200/300, category=History), itemCondition=New), checkout=Checkout(id=30, pending=false), due=2022-05-22, returned=null)
+LineItem(id=62, item=Item(id=5, book=Book(id=3, title=Database System Concepts, author=Abraham Silberschatz, Henry F. Korth & S. Sudarshan, description=Seventh edition., isbn=9780078022159, imageUrl=https://picsum.photos/seed/3/200/300, category=Math & Science), itemCondition=New), checkout=Checkout(id=30, pending=false), due=2022-05-22, returned=null)
+end of file

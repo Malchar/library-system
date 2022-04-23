@@ -1,0 +1,5 @@
+User(email=p_schmitz@email.com, password=$2a$12$gA7DNVYnOeo4Zj.VaoNhe.8IlgRj87/i0aE3ZeDJph.myMLI4Rvjq, name=Paul Schmitz)
+Checkout(id=28, pending=false)
+LineItem(id=58, item=Item(id=2, book=Book(id=1, title=The Essentials of Computer Organization and Architecture, author=Linda Null & Julia Lobur, description=Fifth edition., isbn=9781284123036, imageUrl=https://picsum.photos/seed/1/200/300, category=Math & Science), itemCondition=New), checkout=Checkout(id=28, pending=false), due=2022-05-22, returned=null)
+LineItem(id=59, item=Item(id=29, book=Book(id=7, title=The Inevitable, author=Kevin Kelly, description=Forecasts the twelve technological forces that will shape the next thirty years., isbn=9780525428084, imageUrl=https://picsum.photos/seed/7/200/300, category=Technology), itemCondition=New), checkout=Checkout(id=28, pending=false), due=2022-05-22, returned=null)
+end of file

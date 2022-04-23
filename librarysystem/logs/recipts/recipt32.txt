@@ -1,0 +1,5 @@
+User(email=a@b.com, password=$2a$10$an9tCHZ6K3g1XpAVU7MRNOdu6L9WOePV7zUr16/sQUKdKokN1akNW, name=test)
+Checkout(id=32, pending=false)
+LineItem(id=64, item=Item(id=32, book=Book(id=10, title=The Martian, author=Andy Weir, description=The story follows an American astronaut, Mark Watney, as he becomes stranded alone on Mars in 2035 and must improvise in order to survive., isbn=9780804139021, imageUrl=https://picsum.photos/seed/10/200/300, category=Science Fiction), itemCondition=New), checkout=Checkout(id=32, pending=false), due=2022-05-23, returned=null)
+LineItem(id=65, item=Item(id=4, book=Book(id=2, title=Data Structures & Other Objects Using Java, author=Michael Main, description=Fourth edition., isbn=9780132576246, imageUrl=https://picsum.photos/seed/2/200/300, category=Math & Science), itemCondition=Fine), checkout=Checkout(id=32, pending=false), due=2022-05-23, returned=null)
+end of file

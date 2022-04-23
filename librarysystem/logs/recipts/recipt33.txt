@@ -1,0 +1,3 @@
+User(email=a@b.com, password=$2a$10$an9tCHZ6K3g1XpAVU7MRNOdu6L9WOePV7zUr16/sQUKdKokN1akNW, name=test)
+Checkout(id=33, pending=false)
+end of file
