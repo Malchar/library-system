@@ -7,6 +7,8 @@ import java.util.List;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.paulschmitz.librarysystem.database.entity.User;
 import org.springframework.test.annotation.Rollback;
@@ -56,16 +58,17 @@ public class TestUserDAO {
 	/**
 	 * Updates the user by changing its name
 	 */
-	@Test
+	@ParameterizedTest
+	@ValueSource(strings = {"Paul", "Ryan", "Schmitz"})
 	@Rollback(false)
 	@Order(4)
-	public void testUpdateUser() {
+	public void testUpdateUser(String name) {
 		User testUser = userDao.findUserByEmail("Test Email");
-		testUser.setName("Second Name");
+		testUser.setName(name);
 		userDao.save(testUser);
 
 		User testNewUser = userDao.findUserByEmail("Test Email");
-		assertThat(testNewUser.getName()).isEqualTo("Second Name");
+		assertThat(testNewUser.getName()).isEqualTo(name);
 	}
 
 	/**
