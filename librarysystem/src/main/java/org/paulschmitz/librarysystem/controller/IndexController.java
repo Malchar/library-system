@@ -70,12 +70,9 @@ public class IndexController {
 
 		// create result list
 		List<Book> result = null;
-
-		System.out.println(form.getSearchCheck());
-		
+	
 		// case sensitive search
 		if (form.getSearchCheck() != null && form.getSearchCheck().equals("caseSensitive")) {
-			System.out.println("inside case-sensitive zone");
 			if (form.getSearchRadio().equals("category")) {
 				result = bookDao.findBooksByCategoryContaining(form.getSearchInput());
 			}

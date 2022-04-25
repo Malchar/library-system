@@ -1,7 +1,7 @@
 /* setup color variables */
 :root{
     --color-background: #ffffff80;
-    --color-error:#d9376e;
+    --color-highlight:#d9376e;
 }
 /* fixes bootstrap blue links */
 a, a:hover, a:focus, a:active{
@@ -9,9 +9,8 @@ a, a:hover, a:focus, a:active{
     color: inherit;
 }
 a:hover{
-    color:var(--soft-amber);
-    border-bottom: .1rem solid var(--color-error);
-    padding-bottom: .5rem;
+    color:var(--color-highlight);
+    border-bottom: .1rem solid var(--color-highlight);
 }
 body, html{
     height: 100%;
@@ -43,7 +42,7 @@ h1, h3, nav{
 }
 .myErrorContainer{
     border-style: solid;
-    border-color: var(--color-error);
+    border-color: var(--color-highlight);
     border-width: medium;
     text-align: left;
 }

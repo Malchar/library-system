@@ -1,0 +1,4 @@
+User(email=mn@gmail.com, password=$2a$10$h9OMHiFPoH.3nZ7xIWuir.vI3k/KmlRxGWwq3ORyyZLAJV83ao5bW, name=my)
+Checkout(id=3, pending=false)
+LineItem(id=3, item=Item(id=2, book=Book(id=1, title=The Essentials of Computer Organization and Architecture, author=Linda Null & Julia Lobur, description=Fifth edition., isbn=9781284123036, imageUrl=https://picsum.photos/seed/1/200/300, category=Math & Science), itemCondition=New), checkout=Checkout(id=3, pending=false), due=2022-05-23, returned=null)
+end of file

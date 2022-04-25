@@ -23,34 +23,41 @@
     </c:if>
 
     <!-- Orders view table -->
-    <table class="table myTable">
-        <tr>
-            <th>Checkout Id</th>
-            <th>Status</th>
-            <th></th>
-        </tr>
-        <!-- Could add a check for overdue books -->
-        <c:forEach items="${checkoutList}" var="checkout" varStatus="status">
-            <tr scope="row">
-                <td>${checkout.id}</td>
-                <td>
-                    <c:choose>
-                        <c:when test="${outstandingList[status.index]}">
-                            Outstanding
-                        </c:when>
-                        <c:otherwise>
-                            Completed
-                        </c:otherwise>
-                    </c:choose>
-                </td>
-                <td>
-                    <form action="/user/orderDetails/${checkout.id}" method="POST">
-                        <button type="submit">Details</button>
-                    </form>
-                </td>
+    <c:if test="${empty checkoutList}">
+        <div class="myCenteredContainer">
+            No orders
+        </div>
+    </c:if>
+    <c:if test="${not empty checkoutList}">
+        <table class="table myTable">
+            <tr>
+                <th>Checkout Id</th>
+                <th>Status</th>
+                <th></th>
             </tr>
-        </c:forEach>
-    </table>
+            <!-- Could add a check for overdue books -->
+            <c:forEach items="${checkoutList}" var="checkout" varStatus="status">
+                <tr scope="row">
+                    <td>${checkout.id}</td>
+                    <td>
+                        <c:choose>
+                            <c:when test="${outstandingList[status.index]}">
+                                Outstanding
+                            </c:when>
+                            <c:otherwise>
+                                Completed
+                            </c:otherwise>
+                        </c:choose>
+                    </td>
+                    <td>
+                        <form action="/user/orderDetails/${checkout.id}" method="POST">
+                            <button type="submit">Details</button>
+                        </form>
+                    </td>
+                </tr>
+            </c:forEach>
+        </table>
+    </c:if>
 
 
     <jsp:include page="../include/footer.jsp" />
