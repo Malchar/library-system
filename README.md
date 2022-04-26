@@ -17,7 +17,7 @@ The frontend consists of websites that allow users to create accounts and login.
 
 The backend is in java using spring JPA. It makes spring queries, non-native HQL queries, and native SQL queries. The code also incorporates concepts such as streams, logging, lambda functions, and junit jupiter test cases.
 
-* JSP/CSS/Javascript
+* [JSP](https://www.oracle.com/java/technologies/jspt.html)
 * [JQuery](https://api.jquery.com/)
 * [mySQL](https://dev.mysql.com/doc/)
 * [Bootstrap](https://getbootstrap.com/)
